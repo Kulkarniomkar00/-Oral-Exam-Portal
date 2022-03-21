@@ -9,14 +9,15 @@
         <div class="card-body">
           <!-- Makes POST request to /login route -->
           <p><%- error %></p>
-          <form id="loginStudent" action="/login" method="POST">
+
+          <form id="loginTeacher" action="/loginTeacher" method="POST">
             <div class="form-group">
-              <label for="username">PRN</label>
+              <label for="username">Email</label>
               <input
-                type="text"
+                type="email"
                 class="form-control"
                 name="username"
-                placeholder="Enter PRN"
+                placeholder="Enter email"
               />
             </div>
             <div class="form-group">
@@ -31,12 +32,12 @@
                 Teacher Login
               </p> -->
               <input
-                id="student"
+                id="teacher"
                 type="button"
-                value="Teacher Login"
+                value="Student Login"
                 class="login"
                 style="float: right"
-                onclick="window.location.href = 'http://localhost:3000/loginT'"
+                onclick="window.location.href = 'http://localhost:3000/login'"
               />
             </div>
             <button type="submit" class="btn btn-dark">Login</button>
